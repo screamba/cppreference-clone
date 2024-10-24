@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>cppreference</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            document.querySelectorAll('span').forEach((span) => {
+                span.role = "none";
+            })
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a>cppreference.com</a>
+            </h1>
+            <search>
+                <form action="https://www.duckduckgo.com/" method="get">
+                    <input type="hidden" value="cppreference.com" name="sites">
+                    <input id="search-label" type="text" name="q">
+                    <button type="submit"><label for="search-label">Search</label></button>
+                </form>
+            </search>
+            <label for="standard-rev-selection">Standard revision:</label>
+            <select id="standard-rev-selection">
+                <option value="0">Diff</option>
+                <option value="1">C++98/03</option>
+                <option value="2">C++11</option>
+                <option value="3">C++14</option>
+                <option value="4">C++17</option>
+                <option value="5">C++20</option>
+                <option value="6">C++23</option>
+                <option value="7">C++26</option>
+            </select>
+            <nav>
+                <ul>
+                    <li><a>Page</a></li>
+                    <li><a>Discussion</a></li>
+                    <li><a>Log in</a></li>
+                    <li><a>Create account</a></li>
+                    <li><a>View</a></li>
+                    <li><a>View Source</a></li>
+                    <li><a>History</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <header>
+                    <h2>
+                        <a>C++ reference</a>
+                    </h2>
+                    <nav>
+                        <ul>
+                            <li><a>C++11</a></li>
+                            <li><a>C++14</a></li>
+                            <li><a>C++17</a></li>
+                            <li><a>C++20</a></li>
+                            <li><a>C++23</a></li>
+                            <li><a>C++26</a></li>
+                            <li><a>Compiler support</a>
+                                <ul>
+                                    <li><a>C++11</a></li>
+                                    <li><a>C++14</a></li>
+                                    <li><a>C++17</a></li>
+                                    <li><a>C++20</a></li>
+                                    <li><a>C++23</a></li>
+                                    <li><a>C++26</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <section>
+                    <ul>
+                        <li>
+                            <a>Language</a>
+                            <ul>
+                                <li><a>Keywords</a></li>     
+                                <li><a>Preprocessor</a></li>
+                                <li><a>ASCII chart</a></li>
+                                <li>
+                                    <a>Basic concepts</a>
+                                    <ul>
+                                        <li><a>Comments</a></li>
+                                        <li><a>Names</a> (<a>lookup</a>)</li>
+                                        <li><a>Types</a> (<a>fundamental types</a>)</li>
+                                        <li><a>The main function</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>Expressions</a>
+                                    <ul>
+                                        <li><a>value categories</a></li>
+                                        <li><a>Evaluation order</a></li>
+                                        <li><a>Operators</a> (<a>precedence</a>)</li>
+                                        <li><a>Conversions</a></li>     
+                                        <li><a>Literals</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Statements
+                                    <ul>
+                                        <li><a>if</a></li>      
+                                        <li><a>switch</a></li>
+                                        <li><a>for</a></li>     
+                                        <li><a>range-for</a> (C++11)</li>
+                                        <li><a>while</a></li>   
+                                        <li><a>do-while</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Declarations</a></li>   
+                                <li><a>Initialization</a></li>
+                                <li><a>Functions</a></li>   
+                                <li><a>Overloading</a></li>
+                                <li><a>Classes</a> (<a>unions</a>)</li>
+                                <li><a>Templates</a></li>   
+                                <li><a>Exceptions</a></li>
+                                <li><a>Freestanding implementations</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Standard library</a> (<a>headers</a>)</li>
+                        <li><a>Named requirements</a></li>
+                        <li>
+                            Feature test macros (C++20)
+                            <ul>
+                                <li><a>Language</a></li>   
+                                <li><a>Standard library</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Language support library</a>
+                            <ul>
+                                <li>
+                                    <a>Program utilities</a>
+                                    <ul>
+                                        <li><a>Signals</a></li>   
+                                        <li><a>Non-local jumps</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Basic memory management</a></li>
+                                <li><a>source_location (C++20)</a></li>
+                                <li><a>Coroutine support (C++20)</a></li>
+                                <li><a>Comparison utilities (C++20)</a></li>
+                                <li><a>Type support</a></li>   
+                                <li><a>type_info</a></li>
+                                <li><a>numeric_limits</a></li>   
+                                <li><a>exception</a></li>
+                                <li><a>initializer_list (C++11)</a></li>
+                            </ul>
+                        </li>
+                        <li>Concepts library(C++20)</li>
+                        <li>
+                            <a>Diagnostics library</a>
+                            <ul>
+                                <li><a>Assertions</a></li>   
+                                <li><a>System error (C++11)</a></li>
+                                <li><a>Exception types</a></li>   
+                                <li><a>Error numbers</a></li>
+                                <li><a>basic_stacktrace (C++23)</a></li>
+                                <li><a>Debugging support (C++26)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Memory management library</a>
+                            <ul>
+                                <li><a>Allocations</a></li>   
+                                <li><a>Smart pointers</a></li>
+                                <li><a>Memory resources (C++17)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Metaprogramming library (C++11)</a>
+                            <ul>
+                                <li><a>Type traits</a></li>   
+                                <li><a>ratio</a></li>
+                                <li><a>integer_sequence (C++14)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            General utilities library (C++11)
+                            <ul>
+                                <li><a>Function objects</a></li>   
+                                <li><a>hash</a> (C++11)</li>
+                                <li><a>Swap</a></li>   
+                                <li><a>Type operations</a> (C++11)</li>
+                                <li><a>Integer comparision (C++20)</a></li>
+                                <li><a>pair</a></li>   
+                                <li><a>tuple</a> (C++11)</li>
+                                <li><a>optional (C++17)</a></li>
+                                <li><a>expected (C++23)</a></li>
+                                <li><a>variant</a> (C++17)</li>   
+                                <li><a>any</a> (C++17)</li>
+                                <li><a>bitset</a></li>   
+                                <li><a>Bit manipulation</a> (C++20)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Containers library</a>
+                            <ul>
+                                <li><a>vector</a></li>   
+                                <li><a>deque</a></li>   
+                                <li><a>array</a> (C++11)</li>
+                                <li><a>list</a></li>   
+                                <li><a>forward_list</a> (C++11)</li>
+                                <li><a>map</a></li>   
+                                <li><a>multimap</a></li>   
+                                <li><a>set</a></li>   
+                                <li><a>multiset</a></li>
+                                <li><a>unordered_map</a> (C++11)</li>
+                                <li><a>unordered_multimap</a> (C++11)</li>
+                                <li><a>unordered_set</a> (C++11)</li>
+                                <li><a>unordered_multiset</a> (C++11)</li>
+                                <li><a>Container adaptors</a></li>
+                                <li><a>span</a> (C++20)</li>    
+                                <li><a>mdspan</a> (C++23)</li>
+                            </ul>
+                        </li>
+                        <li><a>Iterators library</a></li>
+                        <li>
+                            <a>Ranges library</a> (C++20)
+                            <ul>
+                                <li><a>Range factories</a></li>     
+                                <li><a>Range adaptors</a></li>
+                                <li><a>generator</a> (C++23)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Algorithms library</a>
+                            <ul>
+                                <li><a>Numeric algorithms</a></li>
+                                <li><a>Execution policies</a> (C++17)</li>
+                                <li><a>Constrained algorithms</a> (C++20)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Strings library</a>
+                            <ul>
+                                <li><a>basic_string</a></li>    
+                                <li><a>char_traits</a></li>
+                                <li>
+                                    <a>Null-terminated strings</a>
+                                    <ul>
+                                        <li><a>byte</a></li>    
+                                        <li><a>multibyte</a></li>   
+                                        <li><a>wide</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Text processing library
+                            <ul>
+                                <li><a>Primitive numeric conversions</a> (C++17)</li>
+                                <li><a>Formatting</a> (C++20)</li>
+                                <li><a>locale</a></li>      
+                                <li><a>Character classification</a></li>
+                                <li><a>text_encoding</a> (C++26)</li>
+                                <li>
+                                    <a>Regular expressions</a> (C++11)
+                                    <ul>
+                                        <li><a>basic_regex</a></li>     
+                                        <li><a>Algorithms</a></li>
+                                        <li><a>Default regular expression grammar</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Numerics library
+                            <ul>
+                                <li><a>Common math functions</a></li>
+                                <li><a>Mathematical special functions</a> (C++17)</li>
+                                <li><a>Mathematical constants</a> (C++20)</li>
+                                <li><a>Basic linear algebra algorithms</a> (C++26)</li>
+                                <li><a>Pseudo-random number generation</a></li>
+                                <li><a>Floating-point environment</a> (C++11)</li>
+                                <li><a>complex</a></li>     
+                                <li><a>valarray</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Date and time library</a>
+                            <ul>
+                                <li><a>Calendar</a> (C++20)</li>    
+                                <li><a>Time zone</a> (C++20)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Concurrency support library</a> (C++11)
+                            <ul>
+                                <li><a>thread</a></li>    
+                                <li><a>jthread</a> (C++20)</li>    
+                                <li><a>atomic</a></li>    
+                                <li><a>atomic_flag</a></li>    
+                                <li><a>atomic_ref</a> (C++20)</li>    
+                                <li><a>memory_order</a></li>    
+                                <li><a>Mutual exclusion</a></li>    
+                                <li><a>Semaphores</a> (C++20)</li>    
+                                <li><a>Condition variables</a></li>    
+                                <li><a>Futures</a></li>    
+                                <li><a>latch</a> (C++20)</li>    
+                                <li><a>barrier</a> (C++20)</li>
+                                <li><a>Safe Reclamation</a> (C++26)</li>
+                            </ul>
+                        </li>
+                        <li><a>Execution support library</a> (C++26)</li>
+                    </ul>
+                </section>
+                <section>
+                    <ul>
+                        <li>
+                            <a>Technical specifications</a>
+                            <ul>
+                                <li>
+                                    <a>Standard library extensions</a> (library fundamentals TS)
+                                    <ul>
+                                        <li><a>resource_adaptor</a></li>    
+                                        <li><a>invocation_type</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>Standard library extensions v2</a> (library fundamentals TS v2)
+                                    <ul>
+                                        <li><a>propagate_const</a></li>    
+                                        <li><a>ostream_joiner</a></li>    
+                                        <li><a>randint</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>Standard library extensions v3</a> (library fundamentals TS v3)
+                                    <ul>
+                                        <li><a>scope_exit</a></li>    
+                                        <li><a>scope_fail</a></li>    
+                                        <li><a>scope_success</a></li>    
+                                        <li><a>unique_resource</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>Parallelism library extensions v2</a> (parallelism TS v2)
+                                    <ul>
+                                        <li><a>simd</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Concurrency library extensions</a> (concurrency TS)</li>
+                                <li><a>Transactional Memory</a> (TM TS)</li>
+                                <li><a>Reflection</a> (reflection TS)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <footer>
+                    <nav>
+                        <ul>
+                            <li><a>External Links</a></li>      
+                            <li><a>Non-ANSI/ISO Libraries</a></li>  
+                            <li><a>Index</a></li>   
+                            <li><a>std Symbol Index</a></li>
+                        </ul>
+                    </nav>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h2>
+                        <a>C reference</a>
+                    </h2>
+                    <nav>
+                        <ul>
+                            <li><a>C89</a></li>
+                            <li><a>C95</a></li>
+                            <li><a>C11</a></li>
+                            <li><a>C17</a></li>
+                            <li><a>C23</a></li>
+                            <li><a>Compiler support</a>
+                                <ul>
+                                    <li><a>C99</a></li>
+                                    <li><a>C23</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <section>
+                    <ul>
+                        <li><a>Language</a>
+                            <ul>
+                                <li><a>Basic concepts</a></li>
+                                <li><a>Keywords</a></li>
+                                <li><a>Preprocessor</a></li>
+                                <li><a>Expressions</a></li>
+                                <li><a>Declaration</a></li>
+                                <li><a>Initialization</a></li>
+                                <li><a>Functions</a></li>
+                                <li><a>Statements</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Headers</a></li>
+                        <li><a>Type support</a></li>
+                        <li><a>Program utilities</a></li>
+                        <li><a>Variadic functions</a></li>
+                        <li><a>Diagnostics library</a></li>
+                        <li><a>Dynamic memory management</a></li>
+                        <li><a>Strings library</a>
+                            <ul>
+                                <li>Null-terminated strings    <span>:</span>
+                                    <ul>
+                                        <li><a>byte</a></li>    
+                                        <li><a>multibyte</a></li>    
+                                        <li><a>wide</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a>Algorithms library</a></li>
+                        <li><a>Numerics library</a>
+                            <ul>
+                                <li><a>Common mathematical functions</a></li>
+                                <li><a>Floating-point environment</a> (C99)</li>
+                                <li><a>Pseudo-random number generation</a></li>
+                                <li><a>Complex number arithmetic</a> (C99)</li>
+                                <li><a>Type-generic math</a> (C99)</li>
+                            </ul>
+                        </li>
+                        <li><a>Date and time library</a></li>
+                        <li><a>Localization library</a></li>
+                        <li><a>Input/output library</a></li>
+                        <li><a>Concurrency support library</a> (C11)</li>
+                    </ul>
+                </section>
+                <section>
+                    <ul>
+                        <li><a>Technical specifications</a>
+                            <ul>
+                                <li><a>Dynamic memory extensions</a> (dynamic memory TR)</li>
+                                <li><a>Floating-point extensions, Part 1</a> (FP Ext 1 TS)</li>
+                                <li><a>Floating-point extensions, Part 4</a> (FP Ext 4 TS)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <footer>
+                    <nav>
+                        <ul>
+                            <li><a>External Links</a></li>      
+                            <li><a>Non-ANSI/ISO Libraries</a></li>  
+                            <li><a>Index</a></li>   
+                            <li><a>Symbol Index</a></li>
+                        </ul>
+                    </nav>
+                </footer>
+            </article>
+        </main>
+        <aside>
+            <h2>News</h2>
+            <ul>
+                <li>7 June 2019: New version of the <a>offline archive</a></li>
+                <li>28 October 2018: New version of the <a>offline archive</a></li>
+                <li>11 March 2018: New version of the <a>offline archive</a></li>
+            </ul>
+        </aside>
+        <aside>
+            <a href="https://srv.carbonads.net/ads/click/x/GTND427LF67IV5QJCAYLYKQUCVAIE2QNFTBD6Z3JCA7DL27YC6AI42JKCASDP5QUCYAIPKJJCAAIP27NC6BDTK7KC6SI65QICESDVK3EHJNCLSIZ" target="_blank" rel="noopener sponsored">
+                <img src="https://srv.carbonads.net/static/30242/4f7f59796c5dda8f5dfc63a40583dfde7cebb050" alt="ads via Carbon" border="0" height="100" width="130" data-no-statview="no" style="max-width: 130px;">
+                <p>Design and Development tips in your inbox. Every weekday.</p>
+            </a>
+            <a href="http://carbonads.net/?utm_source=cppreferencecom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" target="_blank" rel="noopener sponsored">ads via Carbon</a>
+        </aside>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a>Support us</a></li>
+                    <li><a>Recent changes</a></li>
+                    <li><a>FAQ</a></li>
+                    <li><a>Offline version</a></li>
+                    <li><a>What links here</a></li>
+                    <li><a>Related changes</a></li>
+                    <li><a>Upload file</a></li>
+                    <li><a>Special pages</a></li>
+                    <li><a>Printable version</a></li>
+                    <li><a>Permanent link</a></li>
+                    <li><a>Page information</a></li>
+                </ul>
+            </nav>
+            <p>This page was last modified on 12 March 2024, at 23:40.</p>
+            <nav>
+                <ul>
+                    <li><a>Privacy policy</a></li>
+                    <li><a>About cppreference.com</a></li>
+                    <li><a>Disclaimers</a></li>
+                    <li><a><img src="https://en.cppreference.com/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki logo" width="88" height="31"></a></li>
+                    <li><a href="https://qbnz.com/highlighter"><img src="https://upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="GeSHi logo"></a></li>
+                    <li><a href="https://www.tigertech.net/referral/cppreference.com"><img src="https://upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Tiger Technologies logo" height="31" width="88"></a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
